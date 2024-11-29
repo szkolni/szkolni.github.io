@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/h4pqgy.ico">
+    <title>odblokowano stronę VIP!!!</title>
+    <style>
+        body {background-color: black; color: white; background-size: cover; background-repeat: no-repeat; background-position: center; height: 100vh; margin: 0; font-family: Arial, sans-serif; background-image: url('https://files.catbox.moe/vaoiok.jpeg');}
+        h1 {font-size: 3em; margin: 0;}
+
+        /* Przyciski */
+        .winCl-wrap {border: 1px solid #000; display: inline; margin-right: 10px; padding-top: 1px; padding-bottom: 3px; background: #c6c6c6;}
+        .winCl-btn {border-left: 1px solid #fff; border-top: 1px solid #fff; border-right: 1px solid #848484; border-bottom: 1px solid #848484; background-color: transparent; padding: 3px 15px 3px 15px; cursor: pointer;}
+        .winCl-btn:hover, .winCl-btn:focus {outline: 0;}
+        .winCl-btn:active {border-right: 1px solid #fff; border-bottom: 1px solid #fff; border-left: 1px solid #848484; border-top: 1px solid #848484;}
+
+        /* Menu Dla Schoolboy Runaway Mody */
+        .card {border-radius: 10px; position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transform: translateY(20px); animation: fadeInUp 0.6s ease-out forwards; transition: transform 0.3s ease; text-decoration: none; color: inherit; cursor: pointer;}
+        .text {position: absolute; bottom: 0; width: 200px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); color: white; font-size: 18px; padding: 10px 0; text-align: center; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); letter-spacing: 1px; opacity: 0; animation: fadeIn 0.5s 0.3s forwards;}
+        .img {width: 200px; display: block; transition: transform 0.3s ease;}
+        .img:hover {transform: scale(1.05);}
+        .gallery {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 0fr)); gap: 20px; padding: 20px; font-family: Arial, sans-serif;}
+
+        /* Animacje */
+        @keyframes fadeInUp {0% {transform: translateY(20px); opacity: 0;} 100% {transform: translateY(0); opacity: 1;}}
+        @keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
+        /* Nie używane zdjęcia:
+        https://files.catbox.moe/hosvb1.jpg
+        https://files.catbox.moe/kx2fj4.jpeg
+        */
+    </style>
+</head>
+<body>
+  <marquee direction="right" scrollamount="10"><h1>Strona/grupa VIP</h1></marquee>
+  <a id="1"><div class="winCl-wrap" onclick="schoolboy()"><button class="winCl-btn">Schoolboy runaway mody (requested by jasiek)</button></div></a><br>
+  <div class="winCl-wrap" onclick="wycieczka()"><button class="winCl-btn">Informacje o wycieczce</button></div>
+  <a href="czat.html" target="_blank"><div class="winCl-wrap"><button class="winCl-btn">Czat</button></div></a>
+  <br>
+  <b>Głosowanie:</b><br>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYH-I-pebfMvt-Kzf8IQAkH5se76T0TJDtfCY1En-XeyLUwQ/viewform?embedded=true" width="670" height="500" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
+  <div id="app" style="position: fixed;right: 0px;top: 30px;z-index: -1;"><h2>Proszę czekać...</h2></div>
+  <img src="https://i.ytimg.com/an/Stxe-UHttIbn5BTd_67vsA/featured_channel.jpg" style="position: fixed;right: 0px;bottom: 0px;z-index: -1;">
+  <script src="https://unpkg.com/webamp"></script>
+  <script>
+      function schoolboy() {
+        document.getElementById('1').innerHTML = `<b>Schoolboy runaway mody mediafire(nadiafrajer): </b><div class="winCl-wrap" onclick="noschoolboy()"><button class="winCl-btn">Zamknij</button></div>
+        <div class="gallery">
+        <a class="card" href="https://www.mediafire.com/file/a6rertes73f2utt/SchoolBoy+Runaway+Minecraft.apk/file" target="_blank">
+          <img class="img" src="https://soundbeat3d1.github.io/sb3d1/schoolboy/minecraft.jfif">
+          <div class="text">
+            Minecraft
+          </div>
+        </a>
+        <a class="card" href="https://www.mediafire.com/file/pwjkddqcu9qq3d3/%D0%A1%D0%BA%D1%83%D0%BB%D0%B1%D0%BE%D0%B9+%D0%9F%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%8F(%D0%A2%D1%8E%D1%80%D1%8C%D0%BC%D0%B0)%D0%9C%D0%BE%D0%B4.apk/file" target="_blank">
+          <img class="img" src="https://soundbeat3d1.github.io/sb3d1/schoolboy/prison.png">
+          <div class="text">
+            Więzienie/Prison
+          </div>
+        </a>
+        <a class="card" href="https://www.mediafire.com/file/e22mxzhzfadwrr0/%D0%A1%D0%BA%D1%83%D0%BB%D0%B1%D0%BE%D0%B9_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9_%D0%A1%D0%BA%D1%83%D1%84_%D0%9C%D0%9E%D0%94.apk/file" target="_blank">
+          <img class="img" src="https://soundbeat3d1.github.io/sb3d1/schoolboy/future.png">
+          <div class="text">
+            Przyszłość/Future
+          </div>
+        </a>
+        <a class="card" href="https://www.mediafire.com/file/5togaz7qw4cpoyd/SchoolBoy+Rofl+Mode.apk/file" target="_blank">
+          <img class="img" src="https://soundbeat3d1.github.io/sb3d1/schoolboy/rofl.jfif">
+          <div class="text">
+            Śmieszny mod/Funny mod
+          </div>
+        </a>
+      </div>`
+      }
+      function noschoolboy() {document.getElementById('1').innerHTML = `<div class="winCl-wrap" onclick="schoolboy()"><button class="winCl-btn">Schoolboy runaway mody (requested by jasiek)</button></div>`}
+      function wycieczka() {alert('WKRÓTCE !1!1')}
+
+      //Webamp
+      const Webamp = window.Webamp;
+      const webamp = new Webamp({
+        initialTracks: [
+          {
+            metaData: {
+              artist: "Kolbaser project",
+              title: "The power Of Love",
+            },
+            url: "https://files.catbox.moe/r4qvzg.mp3",
+          },
+          {
+            metaData: {
+              artist: "Devil drumz",
+              title: "Cold Blood (Dj Relakz RMX)",
+            },
+            url: "https://files.catbox.moe/gkoqj8.mp3",
+          },
+          {
+            metaData: {
+              title: "Sprężynka",
+            },
+            url: "https://files.catbox.moe/yiv16k.mp3",
+          },
+          {
+          metaData: {
+              artist: "twórca sprężynki",
+              title: "PUMP the base",
+            },
+            url: "https://files.catbox.moe/li4yhb.mp3",
+          },
+          {
+          metaData: {
+              artist: "Bass Bastards",
+              title: "The Poky Time (ft. Chomik Hapyna)",
+            },
+            url: "https://cs1.mp3.pm/listen/18546874/TWg2OUgrd2t1YjkvVmZURjI0Qms3c2t4UjVreE5yMXlzbmY5SEEyZjBWNVJnSW9BTnZKVzZzRmNuT3IxYytYclVlUWdJNE9yUkx6SXA4S0NlS2lNanVtRG9CdzZFcHkxQWQwaVQwUDB4R3REOUhYZXhQdzZZMXBMLytva0FRT1A/Bass_Bastards_-_The_Poky_Time_(mp3.pm).mp3",
+          },
+          {
+          metaData: {
+              artist: "DJ Chuck",
+              title: "mix vol.2 (Zабойный Dвижок)",
+            },
+            url: "https://cs1.mp3.pm/listen/225470845/TWg2OUgrd2t1YjkvVmZURjI0Qms3c2t4UjVreE5yMXlzbmY5SEEyZjBWNlF2Q1d4ZitNMWZkR21GNHo4MHV2S0E5V3cyWFYvVFoveXFVdmtWOC9vRGtibUR2UXRxOENVcDc4WWpnM2dlM1RvMzAwNG55RDB0bkZ2NHhPdmJyN0k/DJ_Chuck_-_Zabojnyj_Dvizhok_vol.2_2006_(mp3.pm).mp3",
+          },
+          {
+          metaData: {
+              artist: "Dj Chuck",
+              title: "Bass Up (unfull)",
+            },
+            url: "https://cs1.mp3.pm/listen/20242595/TWg2OUgrd2t1YjkvVmZURjI0Qms3c2t4UjVreE5yMXlzbmY5SEEyZjBWNFFjRHBWMHlwbEpCd05hK3ZyTEsvMlR4SmVEN2lTbXMwK3F1aTNlSWQ0cVNsaWlaMWE2NVd0c0JyL2wxdEg1a0Jlc0ozamtucmJ2S0hYNFgvMU1CenQ/DJ_CHUCK_-_Bass_Up_(mp3.pm).mp3",
+          },
+          {
+          metaData: {
+              artist: "Dj Flint",
+              title: "Attention VS Evaneuce (Demo Track)",
+            },
+            url: "https://cs1.mp3.pm/listen/193747797/TWg2OUgrd2t1YjkvVmZURjI0Qms3c2t4UjVreE5yMXlzbmY5SEEyZjBWNXdWaFRNSDdQdTBsWEFBa0tEVGMxcUNkQkVPS3Z3UXBxOTBVMWpDenI1N0NRQ3h4cmJNczBBRlQxWWhKYjlIeUtLVUg0RnJOTmRLekJ4R3gxblRBaU0/Dj_Flint_-_Attention_(mp3.pm).mp3",
+          },
+          {
+          metaData: {
+              artist: "DJ Timo Tomee",
+              title: "Mini mix demo tracks",
+            },
+            url: "https://cs1.mp3.pm/listen/220192987/TWg2OUgrd2t1YjkvVmZURjI0Qms3c2t4UjVreE5yMXlzbmY5SEEyZjBWNy8rUTdIcTZOSWFlY2tNZmxHL3RvckFZOEk3V2R1MElEd0htTUtHYXRNRmxJaXhkNDBETG1hU2dkc0tDOW5Cc1gycWNMb1k3YTlNM25qUStKa1IzL2s/DJ_Timo_tomee_-_Mini_mix_demo_tracks_(mp3.pm).mp3",
+          },
+          {
+          metaData: {
+              artist: "DJ Timo Tomee",
+              title: "Music Is The Answer",
+            },
+            url: "https://cs1.mp3.pm/listen/189420640/TWg2OUgrd2t1YjkvVmZURjI0Qms3c2t4UjVreE5yMXlzbmY5SEEyZjBWN2JYMzBrdkpDL2t1ckJpWnd3RjRqbnd6cFFNRUpLeGFBcW1WaWpKbVY5dzEvZWxBdDUzZE12MjUwVWp2Z1IvMnFiU3VUZEtVNGY2QkdNOFFBU1d2M0o/._l_ll_.PUMPING_HOUSE._l_ll_._-_DJ_Timo_Tomee_Music_Is_The_Answer_(mp3.pm).mp3",
+          },
+          {
+          metaData: {
+              artist: "TATA ANDREY",
+              title: "Ah you little brat!",
+            },
+            url: "https://soundbeat3d1.github.io/sb3d1/aha.MP3",
+          },
+          {
+          metaData: {
+              artist: "DJ Chuck",
+              title: "mix Zабойный Dвижок)",
+            },
+            url: "https://cs1.mp3.pm/listen/171336903/TWg2OUgrd2t1YjkvVmZURjI0Qms3c2t4UjVreE5yMXlzbmY5SEEyZjBWNEJmaHVwNXdPdG5qaU1xTXV6TmdzV2M2bE5OWWUxQlFiTHJzWGhUTmR5Yzlhbm9Rd1lUSytONmdJWkl2c01oNythVmVmaktDbnpQWnlIT1dLYkpNVys/DJ_Chuck_-_Zabojnyj_Dvizhok_vol.1_2005_(mp3.pm).mp3",
+          },
+          {
+          metaData: {
+              artist: "KSI (prime creator)",
+              title: "Thick Of It (dj szczepan remix)",
+            },
+            url: "https://files.catbox.moe/tzgzaq.mp3",
+          },
+          {
+          metaData: {
+            title: "DJ Armani– По Проводам"
+            },
+            url: "https://cs1.mp3.pm/listen/236091297/ZVBySGhhd283VnM3OXVPWTRqLzMyc21yRzFTcGpMWFIrcnkzN0IxZUgwTXhuYlU2RThnWE9EdEwyS2ZYV1JFZXdOWFMvRVljMHNaa3RGUENFNUFIMFB3RzZPaW1veXNhYkZCUEJiVlduNFFRV3RwNHZvQTdiZUJDb2kwWmRyVnA/DJ_Armani_-_Po_Provodam_(mp3.pm).mp3"
+          },
+          {
+          metaData: {
+            },
+            url: "https://cs1.mp3.pm/listen/159908685/ZVBySGhhd283VnM3OXVPWTRqLzMyc21yRzFTcGpMWFIrcnkzN0IxZUgwTnhCRDBtM01SSW5lRjJJMFZXTHB0WFowQlNSMlVXazUzS3MxcmQycTJ6N3BteWtuMFVEdFZ5ZWdkNCthVzdSUTZJODV3amJ5QmdLSWdSd0dGUjRjbHM/DJ_CHUCK_-_Tancpol_(mp3.pm).mp3"
+          },
+          {
+          metaData: {
+            title: "Kolbaser Project - The New Life"
+            },
+            url: "https://cs1.mp3.pm/listen/144624289/ZVBySGhhd283VnM3OXVPWTRqLzMyc21yRzFTcGpMWFIrcnkzN0IxZUgwT3YxdXkzeDBNdWZaUUFleVNRcjBST2ZtUHlkaDBES3cwaE1pL1B5d21TK3ZZbkpSMFhKc1orazdYaTlZN2hsWkZKRmF1UXVXOUJ2M2l6Q2JOVEtzTU8/Kolbaser_Project_-_The_New_Life_(mp3.pm).mp3"
+          },
+          {
+          metaData: {
+            title: "Kolbaser Project - The New Life 2008 (Full Album)"
+            },
+            url: "https://cs1.mp3.pm/listen/102943113/ZVBySGhhd283VnM3OXVPWTRqLzMyc21yRzFTcGpMWFIrcnkzN0IxZUgwTmVFU3Y2SS9Ddk9obWhWQW1SQnhEL2xML3lJYjdHUWFvcUhaT3BIN3FpUFNiYlRjQzFmY2hXRUZldkhKeFFwTUNRTENReHU2bC9ZbTRyYW5kV3BBMmo/Kolbaser_Project_-_the_New_Life_2008_(mp3.pm).mp3"
+          },
+          {
+          metaData: {
+            title: "БЕТОNщики - ПеRдеж (PUMPULSE REMIX)"
+            },
+            url: "https://cs1.mp3.pm/listen/222327150/ZVBySGhhd283VnM3OXVPWTRqLzMyc21yRzFTcGpMWFIrcnkzN0IxZUgwUHNSL3hPdUkxQWNrRU9nNnQrQjlhQmdMV2xOOU9ja2huYjVhVEZLb0xhZnpRVWNXc295Z2RRUjFkTjVqSWNvYWZKK0xucFFOOUxMYjVIZklQWHZJYUM/PUMPULSE_BETONcshiki_-_PeRdezh_(mp3.pm).mp3"
+          },
+        ],
+      });
+      webamp.renderWhenReady(document.getElementById("app"));
+</script>
+</body>
