@@ -1,0 +1,37 @@
+Wzory na pole:
+- Równoległobok: P = a * h
+- Romb:		 P = e * f (na dwa)
+- Trapez:	 P = a + b * h (na dwa)
+Boki w czworokątach:
+- Równoległobok: ma po 2 boki tej samej długości, równoległe do siebie
+- Romb:		 (równoległobok), ma wszystkie boki tej samej długości
+- Trapez:	 ma przynajmniej 1 parę boków równoległych
+Trójkąty:
+- prostokątny:	ma wszystkie kąty ostre <90 stopni
+- równoboczny:	ma wszystkie boki tej samej długości
+-równoramienny:	ma przynajmniej 2 boki tej samej długości
+Oznaczanie kątów (Greckie symbole):
+- α: 		alfa
+- β: 		beta
+- γ: 		gamma
+- δ: 		delta
+Kąty:
+- Kąt ostry:	ma mniej niż 90 stopni
+- Kąt prosty:	ma 90 stopni
+- Kąt rozwarty:	ma mniej niż 180 stopni i więcej niż 90 stopni
+- Kąt półpełny:	ma 180 stopni
+- Kąt wklęsły:	ma mniej niż 360 stopni i więcej niż 180 stopni
+- Kąt pełny: 	ma 360 stopni
+Linie:
+- Odcinki:	mają początek i koniec
+- Półproste:	mają początek, ale nie mają końca
+- Proste:	nie mają początku ani końca
+Proste:
+- równoległe:	nigdy się nie przecinają
+- prostopadłe:	dwie proste nazywamy prostymi prostopadłymi wtedy, gdy przecinają się pod kątem prostym
+Jak oznaczamy równoległe i prostopadłe:
+- Równoległe:	A || B
+- Prostopadłe:	A _|_ B
+Koła i okręgi:
+- ⭕:		okrąg
+- 🔴:		koło
